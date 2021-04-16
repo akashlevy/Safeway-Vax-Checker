@@ -1,5 +1,5 @@
 # Import libraries
-import argparse, json, math, time, urllib.request
+import argparse, json, math, sys, time, urllib.request
 
 # Earth radius (km)
 EARTH_RADIUS = 6373.0
@@ -76,7 +76,7 @@ if __name__ == '__main__':
         if not data:
             print("No vaccines near you right now, sorry.")
         for slot in data:
-            print(f"Vaccine available near you! To book, go to: {slot['coach_url']}\a")
+            print(f"Vaccine available near you! To book, go to: {slot['coach_url']}\a\a\a\a\a")
         if args.check_once:
             exit(0)
         time.sleep(args.check_interval)
